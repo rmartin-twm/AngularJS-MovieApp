@@ -1,6 +1,0 @@
-<div ng-repeat="movie in movies | filter:search | limitTo:18" class="item-wrapper">
-        <div>
-            <a ng-href="#/movies/{{movie.id}}"><img ng-class="{zoomImage: entered}" ng-mouseenter="entered = true" ng-mouseleave="entered = false" ng-src="{{movie.poster_path && ('http://d3gtl9l2a4fn1j.cloudfront.net/t/p/w500'+movie.poster_path) || 'images/no-poster.jpg'}}"></a>
-        </div>
-</div>
-
