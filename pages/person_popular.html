@@ -1,0 +1,5 @@
+<div ng-repeat="actor in actors | filter:search | limitTo:18" class="item-wrapper">
+    <div>
+    	<a ng-href="#/person/{{actor.id}}"><img ng-class="{zoomImage: entered}" ng-mouseenter="entered = true" ng-mouseleave="entered = false" ng-src="{{actor.profile_path && ('http://d3gtl9l2a4fn1j.cloudfront.net/t/p/w500'+actor.profile_path) || 'images/no-poster.jpg'}}"></a>
+	</div>
+</div>

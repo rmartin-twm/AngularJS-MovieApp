@@ -1,0 +1,18 @@
+<div ng-click="showImage = !showImage" ng-show="showImage" class="backdrop-img" style="background-image:url({{movie.backdrop_path && ('http://d3gtl9l2a4fn1j.cloudfront.net/t/p/w500'+movie.backdrop_path) || 'images/no-poster.jpg'}});"></div>
+
+<div>
+	<h2>{{movie.original_title}}</h2>
+	<p>{{movie.tagline}}<br/>
+    {{movie.overview}}</p>
+    
+    <hr/>
+    
+    <ul class="info-display">
+        <li><span>Release Date</span><br class="no-break"/> {{movie.release_date}}</li>
+        <li><span>Popularity</span><br class="no-break"/> {{movie.popularity | number:1}}</li>
+        <li><span>Vote Average</span><br class="no-break"/> {{movie.vote_average | number:1}}</li>
+        <li><span>Vote Count</span><br class="no-break"/> {{movie.vote_count | number:1}}</li>
+        <li><span>Revenue</span><br class="no-break"/> {{movie.revenue | currency}}</li>
+        <li><span>Runtime</span><br class="no-break"/> {{movie.runtime}} mins.</li>
+    </ul>
+</div>	
