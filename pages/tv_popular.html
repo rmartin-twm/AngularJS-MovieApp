@@ -1,0 +1,5 @@
+<div ng-repeat="show in shows | filter:search | limitTo:18" class="item-wrapper">
+     <div>
+            <a ng-href="#/tv/{{show.id}}"><img ng-class="{zoomImage: entered}" ng-mouseenter="entered = true" ng-mouseleave="entered = false" ng-src="{{show.poster_path && ('http://d3gtl9l2a4fn1j.cloudfront.net/t/p/w500'+show.poster_path) || 'images/no-poster.jpg'}}"></a>
+        </div>   
+</div>

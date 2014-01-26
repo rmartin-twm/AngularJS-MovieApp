@@ -1,0 +1,15 @@
+<div ng-click="showImage = !showImage" ng-show="showImage" class="profile-img" style="background-image:url({{actor.profile_path && ('http://d3gtl9l2a4fn1j.cloudfront.net/t/p/w500'+actor.profile_path) || 'images/no-poster.jpg'}});"></div>
+
+<div>
+	<h2>{{actor.name}}</h2>
+	<p>{{actor.biography}}<br/>
+    <a ng-href="{{actor.homepage}}" target="_blank">{{actor.homepage}}</a></p>
+    
+    <hr/>
+    
+    <ul class="info-display">
+        <li><span>Birthday</span><br class="no-break"/> {{actor.birthday}}</li>
+        <li><span>Deathday</span><br class="no-break"/> {{actor.deathday}}</li>
+        <li><span>Place of Birth</span><br class="no-break"/> {{actor.place_of_birth}}</li>
+    </ul>
+</div>	
